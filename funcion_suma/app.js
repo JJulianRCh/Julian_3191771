@@ -5,5 +5,5 @@ function suma(a, b) {
 
 let a = parseInt(prompt("Ingrese un valor"));
 let b = parseInt(prompt("Ingrese otro valor"));
-let resultado = a + b;
+let resultado = suma(a, b);
 console.log("La suma de %d mas %d es igual a %d", a, b, resultado);
