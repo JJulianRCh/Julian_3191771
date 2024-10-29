@@ -1,0 +1,32 @@
+#Formulario {
+    width: 400px;
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid;
+    border-color: rgb(0, 5, 73);
+}
+
+label {
+    font-style: italic;
+    font-size: 16px;
+}
+
+input[type= "text"] {
+    width: 170px;
+    height: 20px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+input[type= "submit"] {
+    width: 60px;
+    height: 40px;
+    margin-left: 160px;
+    text-align: center;
+    font-size: 16px;
+}
+
+a {
+    margin-left: 500px;
+    text-align: center;
+}
