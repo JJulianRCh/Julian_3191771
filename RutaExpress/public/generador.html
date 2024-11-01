@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h4>Generacion de codigos QR</h4>
+    </header>
+    <div id="formulario">
+        <div>
+            <label for="input1">Nombre</label>
+            <input type="text" id="input1" maxlength="255" placeholder="Nombre completo">
+
+            <label for="input2">Correo Electronico</label>
+            <input type="text" id="input2" maxlength="255" placeholder="Correo" required>
+
+            <label for="input3">Seleccion de institucion</label>
+            <input type="text" id="input3" list="institutcionLista" required>
+            <datalist id="institutcionLista">
+                <option value="Universidad Nacional Autonama de Mexico (UNAM)">
+                    Universidad Nacional Autonama de Mexico (UNAM)
+                </option>
+                <option value="Instituto Politecnico Nacional (IPN)">
+                    Instituto Politecnico Nacional (IPN)
+                </option>
+            </datalist>
+            <label for="input4">Dependencia</label>
+            <input type="text" id="input4">
+
+            <div>
+                <button onclick="generarQR()" class="btn btn-primary">Generar QR</button>
+
+                <button onclick="location.href='index.html'" class="btn btn-primary">
+                    Generar  nuevo QR
+                </button>
+            </div>
+
+            <div id="qr-code">
+                <!--FJDSJ-->
+            </div>
+        </div>
+    </div>
+    <a href="principal.html">volver</a>
+</body>
+<script src="./scripts/generador.js"></script>
+</html>
