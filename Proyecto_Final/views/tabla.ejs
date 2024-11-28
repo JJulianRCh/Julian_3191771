@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros registrados</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div>
+        <h2>Lista de Libros</h2>
+        <table class="centered">
+            <thead>
+                <tr>
+                    <th>Clave</th>
+                    <th>autor</th>
+                    <th>Titulo</th>
+                    <th>Categoria</th>
+                    <th>Año</th>
+                    <th>Paginas</th>
+                    <th>Unidades</th>
+                    <th>Precio</th>
+                    <th>acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% libreria.forEach(libro => { %>
+                    <tr>
+                        <td><%= libro.id %></td>
+                        <td><%= libro.autor %></td>
+                        <td><%= libro.titulo %></td>
+                        <td><%= libro.categoria %></td>
+                        <td><%= libro.anio %></td>
+                        <td><%= libro.paginas %></td>
+                        <td><%= libro.unidades %></td>
+                        <td><%= libro.precio %></td>
+                        <td>
+                            <a href="editar/<%= libro.id %>">Editar</a>
+                            <a href="eliminar/<%= libro.id %>">Eliminar</a>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>Creado por Jose Julian</p>
+        <p>Esta pagina solo fue creada por motivos educativos, no se tiene pensado usarlo en negocios</p>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

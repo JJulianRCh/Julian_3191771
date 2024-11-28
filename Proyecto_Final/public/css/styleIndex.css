@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient(blue 10%, cyan);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.container{
+    height: 500px;
+}
+
+h1{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center-align {
+    display: flex;
+}
+
+footer {
+    color: white;
+    background-color: blueviolet;
+    margin-top: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}

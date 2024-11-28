@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Agregando nuevo libro</h1>
+    <form id="myForm" action="/agregar" method="post">
+    <div class="row center-align">
+        <div class="input-field col s12">
+            <input id="autor" name="autor" type="text" class="validate" required>
+            <label class="active" for="autor">Nombre del autor</label>
+        </div>
+    </div>
+
+    <div class="row center-align">
+        <div class="input-field col s12">
+            <input id="titulo" name="titulo" type="text" class="validate" required>
+            <label class="active" for="titulo">Titulo del libro</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <label>Categoria</label>
+        <br>
+        <select id="categoria" name="categoria" class="browser-default col s12 m4" required>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Terror">Terror</option>
+            <option value="Drama">Drama</option>
+            <option value="Ciencia ficcion">Ciencia ficcion</option>
+            <option value="Teatro">Teatro</option>
+            <option value="Fantasia">Fantasia</option>
+        </select>
+
+        <div class="input-field col s6 m4">
+            <input id="anio" name="anio" type="number" class="validate" min="1000" max="9999" oninput="this.value = this.value.slice(0, 4)" required>
+            <label class="active" for="anio">Año</label>
+        </div>
+
+        <div class="input-field col s6 m4">
+            <input id="paginas" name="paginas" type="number" class="validate" required>
+            <label class="active" for="paginas">Paginas</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s6 m4">
+            <input id="unidades" name="unidades" type="number" class="validate" required>
+            <label class="active" for="unidades">Unidades</label>
+        </div>
+
+        <div class="input-field col s6 m4">
+            <input id="precio" name="precio" type="number" class="validate" min="0" max="999999.99" step="0.01" required>
+            <label class="active" for="precio">Precio</label>
+        </div>
+
+        <button class="btn waves-effect waves-light" type="submit" name="action">Agregar
+            <i class="material-icons right">add</i>
+        </button>
+    </div>
+    </form>
+    </div>
+    <footer>
+        <p>Creado por Jose Julian</p>
+        <p>Esta pagina solo fue creada por motivos educativos, no se tiene pensado usarlo en negocios</p>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

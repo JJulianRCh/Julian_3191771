@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(174, 255, 251, 0.507);
+}
+
+h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.container {
+    flex: 1 0 auto;
+    margin-top: 10px;
+}
+
+footer {
+    color: white;
+    background-color: blueviolet;
+    margin-top: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
